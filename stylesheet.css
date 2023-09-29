@@ -24,6 +24,12 @@ button {
     border: 2px;
 }
 
+.container.info.outer {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
 .container {
     display: flex;
     flex-grow: 1;
@@ -62,6 +68,14 @@ button {
     gap: 10px;
 }
 
+.container.items {
+    flex-direction: row;
+    gap: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
+    justify-content: center;
+}
+
 .hero .left {
     flex-direction: column;
     font-size: 48px;
@@ -85,4 +99,37 @@ button {
 .outer {
     padding-left: 160px;
     padding-right: 160px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.image {
+    display: flex;
+    aspect-ratio: 1 / 1;
+    border: 3px solid #3882F6;
+    flex: 1;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    justify-content: space-between;
+    gap: 4px;
+}
+
+.subtext {
+    color: grey;
+    padding: 8px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1F2937;
 }
